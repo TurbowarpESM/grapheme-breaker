@@ -2,7 +2,7 @@
   "name": "grapheme-breaker",
   "version": "0.3.2",
   "description": "An implementation of the Unicode grapheme cluster breaking algorithm (UAX #29)",
-  "main": "src/GraphemeBreaker",
+  "main": "src/GraphemeBreaker.js",
   "directories": {
     "test": "test"
   },
@@ -11,11 +11,15 @@
     "unicode-trie": "^1.0.0"
   },
   "devDependencies": {
+    "@types/node": "^22.10.2",
     "chai": "^4.2.0",
     "mocha": "^6.1.4",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
   },
   "scripts": {
+    "build": "tsup",
     "test": "mocha"
   },
   "browserify": {

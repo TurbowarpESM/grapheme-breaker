@@ -29,7 +29,7 @@ request(`${BASE_URL}/auxiliary/GraphemeBreakProperty.txt`, function (err, res, d
   }
 
   // write the trie to a file
-  fs.writeFileSync(__dirname + '/classes.trie', trie.toBuffer());
+  fs.writeFileSync(__dirname + '/classes.txt', trie.toBuffer());
 
   // write classes to a file
   fs.writeFileSync(__dirname + '/classes.json', JSON.stringify(classes));

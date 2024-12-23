@@ -1,6 +1,6 @@
 const { CR, LF, Control, Extend, Regional_Indicator, SpacingMark, L, V, T, LV, LVT } = require('./classes.json');
 const UnicodeTrie = require('unicode-trie');
-const classTrie = new UnicodeTrie(require('./classes.trie'));
+const classTrie = new UnicodeTrie(require('./classes.txt'));
 
 // Gets a code point from a UTF-16 string
 // handling surrogate pairs appropriately
